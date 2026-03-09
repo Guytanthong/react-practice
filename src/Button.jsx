@@ -2,16 +2,26 @@ function Button(){
 
         const styles = {
             
-                backgroundcolor: "hsl(200,100%,50%)",
-                color : "white",
+                backgroundColor: "hsl(78, 75%, 55%)",
                 padding : "10px 20px",
-                borderradius: "5px",
+                borderRadius: "5px",
                 border:"none",
                 cursor: "pointer",
               
         }
+
+        
+        
+        const handleClick = (e) => {
+                e.target.textContent ="Ouch!"
+                
+        };
+        
+
+
         return(
-            <button styles={styles} > click me</button>
+            <button onDoubleClick={(e) => handleClick(e)} style={styles} > click me</button>
+            
         );
 }
 
