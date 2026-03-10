@@ -1,3 +1,6 @@
+body{
+  background-color: rgba(169, 231, 183, 0.795);
+}
 .card{
     border: 1px solid rgba(125, 120, 120, 0.201);
     border-radius: 10px;
@@ -93,4 +96,136 @@
 .counter-button:hover{
     background-color: rgb(102, 126, 64);
 
+}
+
+.color-picker-container{
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+h1{
+  margin: 50px;
+  font-size: 3rem;
+}
+
+.color-display{
+  width: 300px;
+  height:300px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  border: 5px solid grey;
+  border-radius: 25px;
+  margin-bottom:25px;
+  transition: 0.25 ease;
+}
+
+.color-display p{
+  font-size: 2rem;
+  text-align: center;
+  color:rgba(211, 208, 208, 0.486);
+}
+
+label{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom:10px;
+}
+
+input[type="color"]{
+  width: 75px;
+  height:50px;
+  padding: 5px;
+  border-radius:10px;
+  border:3px solid grey;
+}
+
+.to-do-list{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 100px;
+}
+
+.to-do-list h1{
+    font-size: 4rem;
+}
+
+.delete-button, .up-button, .down-button, .add-button{
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor:pointer;
+  transition: background-color 0.5s ease;
+}
+
+.add-button{
+  background-color: rgb(57, 161, 57);
+}
+
+.add-button:hover {
+  background-color: rgb(40, 109, 40);
+}
+
+.delete-button{
+  background-color: rgb(199, 67, 50);
+}
+
+.delete-button:hover {
+  background-color: rgb(141, 49, 37);
+}
+
+.up-button {
+  background-color: rgb(60, 112, 209);
+}
+
+.up-button:hover {
+  background-color: rgb(43, 81, 150);
+}
+
+.down-button {
+  background-color: rgb(60, 112, 209);
+}
+
+.down-button:hover {
+  background-color: rgb(43, 81, 150);
+}
+
+input[type="text"]{
+  font-size: 1.6rem;
+  padding: 10px;
+  border-radius:5px;
+  border:2px solid grey;
+  color: rgba(0, 0, 0, 0.555);
+}
+
+ol{
+  padding:0;
+}
+
+li{
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 15px;
+  background-color: aliceblue;
+  margin-bottom: 10px;
+  border: 3px solid rgba(0, 0, 0, 0.521);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.text{
+  flex:1; 
+
+}
+
+.delete-button, .up-button, .down-button{
+      padding: 8px 12px;
+      font-size: 1.4rem;
+      margin-left:10px;
 }
