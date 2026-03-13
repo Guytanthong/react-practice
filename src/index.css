@@ -229,3 +229,77 @@ li{
       font-size: 1.4rem;
       margin-left:10px;
 }
+
+.clock-container{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    padding: 10px 0;
+}
+
+.clock{
+    color: white;
+    font-size: 6rem;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.664);
+}
+
+.stopwatch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid;
+    border-radius: 50px;
+    background-color:  white;
+    padding: 30px;
+
+}
+
+.display{
+    font-size:  5rem;
+    font-family: monospace;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.39);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.425);
+    margin-bottom: 25px;
+}
+
+.controls button{
+  font-size: 1.5 rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 5px;
+  min-width :125px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color:white;
+  transition : background-color 0.5s ease;
+
+
+}
+
+.start-button{
+  background-color: green;
+}
+
+.start-button:hover {
+  background-color: rgb(1, 87, 1);
+}
+
+.stop-button{
+  background-color: rgb(161, 2, 2);
+}
+
+.stop-button:hover{
+  background-color: rgb(107, 2, 2);
+}
+
+.reset-button{
+  background-color: rgb(5, 64, 192);
+}
+
+.reset-button:hover{
+  background-color: rgb(2, 44, 134);
+}
